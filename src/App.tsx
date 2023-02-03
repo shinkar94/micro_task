@@ -4,6 +4,8 @@ import {Header} from "./modules/Header/Header";
 import {Body} from "./modules/Body/Body";
 import {Students} from "./modules/Students/Students";
 import {Button} from "./modules/Button/Button";
+import {TestUseState} from "./modules/TestUseState/TestUseState";
+import {TestFilter} from "./modules/TestFilter/TestFilter";
 
 
 function App() {
@@ -31,8 +33,11 @@ function App() {
             <Header title={'Header'}/>
             <Body titleForBody={'Body header!!'}/>
             <Students students={students} />
+            <h3>Lesson Button</h3>
             <Button name={'btn1'} callBack={()=>callBack('Roman', 28)}/>
             <Button name={'btn2'} callBack={()=>callBack2('Ivan')}/>
+            <TestUseState />
+            <TestFilter />
         </>
     );
 }

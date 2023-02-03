@@ -12,6 +12,8 @@ export const Button = (props:ButtonType) => {
         props.callBack()
     }
     return (
-        <button onClick={clickBtn}>{props.name}</button>
+        <>
+            <button onClick={clickBtn}>{props.name}</button>
+        </>
     )
 }
