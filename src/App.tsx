@@ -6,6 +6,7 @@ import {Students} from "./modules/Students/Students";
 import {Button} from "./modules/Button/Button";
 import {TestUseState} from "./modules/TestUseState/TestUseState";
 import {TestFilter} from "./modules/TestFilter/TestFilter";
+import {InputTasks} from "./modules/InputTasks/InputTasks";
 
 
 function App() {
@@ -30,14 +31,15 @@ function App() {
     }
     return (
         <>
-            <Header title={'Header'}/>
-            <Body titleForBody={'Body header!!'}/>
-            <Students students={students} />
-            <h3>Lesson Button</h3>
-            <Button name={'btn1'} callBack={()=>callBack('Roman', 28)}/>
-            <Button name={'btn2'} callBack={()=>callBack2('Ivan')}/>
-            <TestUseState />
-            <TestFilter />
+            {/*<Header title={'Header'}/>*/}
+            {/*<Body titleForBody={'Body header!!'}/>*/}
+            {/*<Students students={students} />*/}
+            {/*<h3>Lesson Button</h3>*/}
+            {/*<Button name={'btn1'} callBack={()=>callBack('Roman', 28)}/>*/}
+            {/*<Button name={'btn2'} callBack={()=>callBack2('Ivan')}/>*/}
+            {/*<TestUseState />*/}
+            {/*<TestFilter />*/}
+            <InputTasks />
         </>
     );
 }
